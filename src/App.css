@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #212121;
+}
+
+.hideBackground {
+  pointer-events: none;
+  opacity: .45;
+  transition: opacity 1.2s ease-out;
+  -moz-transition: opacity 1.2s ease-out;
+  -webkit-transition: opacity 1.2s ease-out;
+}
+
+.showBackground {
+  opacity: 1;
+  transition: opacity .6s ease-out;
+  -moz-transition: opacity .6s ease-out;
+  -webkit-transition: opacity .6s ease-out;
+}
+
+@media only screen and (min-width: 1824px) {
+	.App {
+  		font-size: 1.65em;
+  	}
+}

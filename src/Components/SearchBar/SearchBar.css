@@ -1,0 +1,121 @@
+.searchBar {
+	width: 100%;
+	height: 7.5em;
+	position: fixed;
+	margin-top: -1em;
+  	background: url("./lunarsurface.png") transparent;
+	background-position: bottom;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.searchBar > * {
+	display: inline-block;
+}
+
+.appTitle {
+	font-size: 3em;
+	
+	color: white;
+	float: left;
+	margin-left: 2em;
+	margin-top: .5em;
+	font-weight: bold;
+	-webkit-text-stroke: .5px #212121;
+}
+
+.searchField {
+	margin-top: 1.2em;
+	font-size: 1.7em;
+	width: 50%;
+}
+
+.searchField > * {
+	display: inline;
+}
+.searchForm {
+	font-size: .6em;
+	width: 40%;
+    padding: .2em .3em;
+    box-sizing: border-box;
+    resize: none;
+    border-bottom: 5px transparent solid;
+}
+
+.searchField > form > * {
+	margin-right: 1em;
+}
+
+.searchField > form > button {
+    border-radius: 3px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+    line-height: 32px;
+    height: 32px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+}
+
+.searchField > form > button:hover {
+	background-color: black;
+	color: white;
+}
+
+.searchField > form > button:hover:active {
+	border: #404040 solid 1px;
+	background-color: #404040;
+}
+
+@media only screen and (max-width: 1120px) {
+  .appTitle {
+      font-size: 2.7em;
+      margin-top: .7em;
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+  .searchBar {
+      font-size: .8em;margin-top: -1.4em;
+      
+    }
+}
+
+@media only screen and (max-width: 585px) {
+  .searchBar {
+      position: absolute;
+      background-size: auto 12.5em;
+      height: 12.5em;
+      font-size: .8em;
+    }
+
+  .appTitle {
+  	  font-size: 2.8em;
+  	  margin: .3em auto;
+  	  float: none;
+  }
+
+  .searchField {
+  	width: 100%;
+  	margin-top: -.3em;
+  }
+
+  .searchForm {
+  	display: inline-block;
+  	width: 60%;
+  }
+
+  .searchField > form > button {
+	height: 2.4em;
+  }
+  .favoritesButton {
+  	margin-top: .5em;
+  }
+}

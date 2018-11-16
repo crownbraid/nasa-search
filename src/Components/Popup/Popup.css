@@ -1,0 +1,116 @@
+.mm-popup {
+    display: none;
+}
+
+.popupImage {
+    max-height: 68vh;
+    max-width: 90vw;
+    padding: 1px;
+    border: 1px black gray;
+    background-color: lightgray;
+}
+
+.mm-popup--visible {
+    display: block;
+}
+
+
+.mm-popup__btn {
+    border-radius: 3px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 0;
+    line-height: 32px;
+    height: 32px;
+    border: 1px solid #666;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    background: transparent;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+}
+
+.mm-popup__btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.mm-popup__btn:hover:active {
+    border: black solid 1px;
+    background-color: #404040;
+}
+
+.mm-popup__box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0px 5px 20px 0px rgba(126,137,140,0.20);
+    border-radius: 5px;
+    border: 1px solid #B8C8CC;
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.mm-popup__box__header {
+    padding: 13px 20px 11px;
+    background: #2e2e2e;
+    color: white;
+    letter-spacing: .02em;
+    word-spacing: .05em;
+}
+
+.mm-popup__box__header__title {
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.mm-popup__box__body {
+    padding: 20px;
+    line-height: 1.4;
+    font-size: 14px;
+    color: #454B4D;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.mm-popup__box__body p {
+    margin: 0 0 5px;
+}
+
+.mm-popup__box__footer {
+    overflow: hidden;
+    padding: 40px 20px 20px;
+    margin-top: -2.5em;
+}
+
+.mm-popup__box__footer__right-space {
+    float: right;
+}
+
+.mm-popup__box__footer__right-space .mm-popup__btn {
+    margin-right: 5px;
+}
+
+.mm-popup__box__footer__left-space {
+    float: right;
+}
+
+.mm-popup__box__footer__left-space .mm-popup__btn {
+    margin-right: 13px;
+}
+
+.popupDesc {
+    margin-top: .7em;
+}

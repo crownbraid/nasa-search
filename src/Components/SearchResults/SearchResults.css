@@ -1,0 +1,21 @@
+.searchResults {
+  padding: 6em 3em 2em;
+}
+
+@media only screen and (max-width: 768px) {
+	.searchResults {
+		padding: 6em 2em 2em;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.searchResults {
+		padding: 6em .5em 2em;
+	}
+}
+
+@media only screen and (max-width: 585px) {
+	.searchResults {
+		padding: 8.5em .5em 2em;
+	}
+}
