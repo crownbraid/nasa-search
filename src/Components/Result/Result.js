@@ -11,9 +11,10 @@ class Result extends Component {
     componentDidMount() {
     	unirest.get(this.state.data.href)
     	.end( res => {
-			const index = res.body.findIndex(url => url.endsWith('orig.jpg') || url.endsWith('orig.mp4'));
-			const newUrl = (res.body[index]) ? res.body[index] : this.state.data.links[0].href;
-			this.setState({url: newUrl});
+			const fullResIndex = res.body.findIndex(url => url.endsWith('orig.jpg') || url.endsWith('orig.mp4'));
+			// If no full-res image, display thumbnail 
+			const imgUrl = (res.body[fullResIndex]) ? res.body[fullResIndex] : this.state.data.links[0].href;
+			this.setState({url: imgUrl});
 		});
     }
 
