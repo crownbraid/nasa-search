@@ -18,14 +18,14 @@ class Result extends Component {
     }
 
     render() {
-    	const add = <span style={{color: 'white'}} className="favoriteHandler" onClick={() => this.props.addFavorite(this.state.data)}>+</span>
-    	const remove = <span style={{color: 'white'}} className="favoriteHandler" onClick={() => this.props.removeFavorite(this.state.data)}>-</span>
+    	const addToFavorites = <span style={{color: 'white'}} className="favoriteHandler" onClick={() => this.props.addFavorite(this.state.data)}>+</span>
+    	const removeFromFavorites = <span style={{color: 'white'}} className="favoriteHandler" onClick={() => this.props.removeFavorite(this.state.data)}>-</span>
 
 		return (
 			<li>
 				<img src={this.state.data.links[0].href} onClick={() => this.props.handlePopup({url: this.state.url, data: this.state.data.data[0]})}/>
-				<div className="addRemove">
-					{(this.props.favorites.some(el => el.links[0].href == this.props.data.links[0].href)) ? remove : add}
+				<div className="addOrRemove">
+					{(this.props.favorites.some(el => el.links[0].href == this.props.data.links[0].href)) ? removeFromFavorites : addToFavorites}
 				</div>
 			</li>
 		);
