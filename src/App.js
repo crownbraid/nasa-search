@@ -62,25 +62,4 @@ class App extends Component {
   }
 }
 
-/*
-
-  handleKeyDown(e) {
-    const { results, popUpIndex } = this.state
-    
-    if (popUpIndex > 0 && (e.keyCode === 37 ||  e.keyCode === 38)) {
-      this.setState( prevState => ({
-        popUpIndex: prevState.popUpIndex - 1,
-        popUp: prevState.results[popUpIndex - 1]
-      }))
-    } else if (popUpIndex < results.length  && (e.keyCode === 39 ||  e.keyCode === 40)) {
-      this.setState( prevState => ({
-        popUpIndex: prevState.popUpIndex + 1,
-        popUp: prevState.results[popUpIndex + 1]
-      }))
-    }
-  }
-
-render => <div className="App" onKeyDown={(this.state.popUp != false) ? this.handleKeyDown : null}>
-*/
-
 export default App;
