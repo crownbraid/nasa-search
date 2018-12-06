@@ -40,7 +40,7 @@ class App extends Component {
   async removeFavorite(item) {
     if (window.confirm(`Are you sure you want to remove \"${item.data[0].title}\" from your favorites?`)) {
       const newState = await this.state.favorites.filter(el => el !== item);
-      this.setState({favorites: newState, results: this.state.favToggle ? newState : this.state.results});
+      this.setState( prevState => {favorites: newState, results: prevState.favToggle ? newState : prevState.results});
     }
   }
 
