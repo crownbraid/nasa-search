@@ -12,9 +12,8 @@ class Result extends Component {
     	unirest.get(this.state.data.href)
     	.end( res => {
 			const index = res.body.findIndex(url => url.endsWith('orig.jpg') || url.endsWith('orig.mp4'));
-			
-			if (res.body[index]) this.setState({url: res.body[index]});
-			else this.setState({url: this.state.data.links[0].href});
+			const newUrl = (res.body[index]) ? res.body[index] : this.state.data.links[0].href;
+			this.setState({url: newUrl});
 		});
     }
 
